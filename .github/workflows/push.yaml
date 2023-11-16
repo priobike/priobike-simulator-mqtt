@@ -10,12 +10,12 @@ on:
       - v*
 
 jobs:
-  publish-deutschland:
+  publish:
     uses: ./.github/workflows/publish.yaml
     with:
       context: .
       registry: bikenow.vkw.tu-dresden.de
-      image: ${{ github.repository }}-deutschland
+      image: ${{ github.repository }}
       branch: ${{ github.ref_name }}
     secrets:
       NEXUS_DOCKER_PUB_USERNAME: ${{ secrets.NEXUS_DOCKER_PUB_USERNAME }}
