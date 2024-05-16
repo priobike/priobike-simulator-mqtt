@@ -1,4 +1,4 @@
-FROM hivemq/hivemq4:latest
+FROM hivemq/hivemq4:4.9.15
 
 ARG EXT_FILE_RBAC_VERSION=4.5.3
 
